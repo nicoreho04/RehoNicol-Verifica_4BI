@@ -17,10 +17,13 @@ public class RehoNicolòClass {
  * @return r sommatoria
  */
 	public int rehoMet(int f) {
-		int r=1;
-		for(int i=f; i<0; i++) {
-			r = r*i;
-		}
+		int r=0;
+		for(int i=f; i>0; i--) {
+			r = r+i;
+		}/* innanzi tutto inizializiamo r a 0 poi mettiamo che i sia maggiore di 0 altrimenti 
+		non si entrerebbe nel ciclo for, decrementiamo il contatore poichè nella traccia mi veniva chiesto di
+		fare la sommatoria dal numero più grande fino ad arrivare a 0 e infine cambio da prodotto a somma perchè la traccia me lo richiedeva 
+		*/
 		return r;
 	}
 
